@@ -1,0 +1,9 @@
+#simple makefile
+
+all: filedisp filecnt
+
+filedisp: inc_a.h
+	g++ filedisp.cpp version.cpp -o filedisp
+filecnt: inc_a.h
+	g++ filecnt.cpp version.cpp -o filecnt
+
